@@ -1,0 +1,22 @@
+body {
+  background-color: #0c0c0bf6;
+    color: rgb(188, 0, 251);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:large
+  }
+  
+  p {
+    color: rgb(189, 70, 94);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:x-large
+  }
+
+  h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:xx-large;
+    color: blueviolet;
+  }
+
+  h2{
+
+  }
