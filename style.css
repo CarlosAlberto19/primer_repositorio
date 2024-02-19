@@ -1,22 +1,205 @@
+:root {
+  --titulo-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --titulo-color: #000; /* Se debe proporcionar un valor de color válido */
+  --grosor: 400; /* Se debe proporcionar un valor numérico válido para el grosor de la fuente */
+  --altura: 30px; /* Se debe proporcionar una unidad de medida válida para la altura de la fuente */
+}
+
+h2 {
+  font-family: var(--titulo-font);
+  color: var(--titulo-color);
+  font-weight: var(--grosor);
+  font-size: 50px;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
+}
+
 body {
-  background-color: #0c0c0bf6;
-    color: rgb(188, 0, 251);
-    font-family: 'Nunito Sans', sans-serif;
-    font-size:large
-  }
-  
-  p {
-    color: rgb(189, 70, 94);
-    font-family: 'Nunito Sans', sans-serif;
-    font-size:x-large
-  }
+  background-image: url("ruta/a/tu/imagen.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif; /* Importa la fuente desde Google Fonts */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.0018382352941176405) 0%,
+    rgba(137, 137, 227, 0.0718662464985994) 10%,
+    rgba(29, 124, 143, 0.5088410364145659) 100%
+  );
+}
 
-  h1{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size:xx-large;
-    color: blueviolet;
-  }
 
-  h2{
-
+@media (min-width: 576px) {
+  h1 {
+    font-size: 40px;
   }
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+p {
+  color: #070606;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: x-large;
+  margin: 5px;
+  margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h2{
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300;
+  font-size: x-large;
+}
+
+footer {
+  background-color: #9c3636; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centrar el texto */
+  margin-top: 80px;
+
+}
+
+.legal-text p {
+  margin: 5px 0; /* Espaciado entre párrafos */
+  font-size: 14px; /* Tamaño del texto */
+}
+
+.legal-text a {
+  color: #fff; /* Color de los enlaces */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.legal-text a:hover {
+  text-decoration: underline; /* Subrayar enlaces al pasar el cursor */
+}
+
+
+section {
+  flex: none;
+}
+
+aside {
+  position: relative;
+}
+
+#menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#menu-list li {
+  margin: 5px 0;
+}
+
+#menu-list h3 {
+  margin: 0;
+}
+
+#menu-list.visible {
+  display: block;
+}
+
+
