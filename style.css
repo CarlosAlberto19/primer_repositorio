@@ -26,17 +26,19 @@ h2 {
 
 .btn {
   width: 150px;
-  height: 50px;
+  height: 100px;
   border-radius: 5px;
   border: none;
   transition: all 0.5s ease-in-out;
-  font-size: 20px;
+  font-size: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   display: flex;
   align-items: center;
-  background: #040f16;
+  background: #0c2f45;
   color: #f5f5f5;
+  gap: 45px;
+  margin-right: 20px;
 }
 
 .btn:hover {
@@ -52,6 +54,27 @@ h2 {
   align-items: center;
   transition: all 0.5s;
 }
+
+.btn .icon .icon-bar {
+  width: 100px;
+    /* Estilos para la clase icon-bar dentro de .btn */
+    text-align: center;
+}
+.btn .icon .icon-bar svg {
+  width: 40px; /* Ancho del SVG */
+  height: auto; /* Altura ajustada automáticamente */
+  fill: hsl(0, 0%, 100%); /* Color de relleno del SVG */
+}
+.btn .text {
+  font-size: 16px; /* Tamaño de fuente */
+  color: #e1cccc; /* Color del texto */
+  margin-left: 10px; /* Margen izquierdo */
+}
+  /* Estilos para el SVG dentro de .icon-bar */
+
+
+
+
 
 .btn .text {
   transform: translateX(55px);
@@ -93,6 +116,7 @@ body {
     rgba(29, 124, 143, 0.5088410364145659) 100%
   );
 }
+
 
 
 @media (min-width: 576px) {
